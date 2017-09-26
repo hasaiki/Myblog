@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="/admin">管理首页</a></li>
+    <li><span>提示信息</span></li>
+</ol>
+<div class="panel panel-default">
+    <div class="panel-heading">提示信息</div>
+    <div class="panel-body">
+       {{ message }}
+    </div>
+    <div class="panel-footer">
+        <a href="{{ url }}">返回分类列表</a>
+    </div>
+</div>
+{% endblock%}
